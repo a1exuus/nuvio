@@ -1,0 +1,539 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f9ff">
+
+    <title>Nuvio — школа программирования</title>
+    <meta name="description" content="Изучай программирование, создавай проекты и развивай навыки вместе с Nuvio.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'nuvio/css/style.css' %}">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="#" class="logo">nuvio<span>.</span></a>
+
+        <nav class="navigation">
+            <a href="#courses">Направления</a>
+            <a href="#learning">Обучение</a>
+            <a href="#about">О школе</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#" class="login-button">Войти</a>
+            <a href="#" class="register-button">Регистрация <span>↗</span></a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    ПРОГРАММИРОВАНИЕ ДЛЯ НОВОГО ПОКОЛЕНИЯ
+                </div>
+
+                <h1>
+                    Не просто<br>
+                    изучай код.<br>
+                    <span>Создавай.</span>
+                </h1>
+
+                <p>
+                    Превращай идеи в реальные проекты.
+                    Изучай технологии, развивай логическое мышление
+                    и открывай для себя мир программирования.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#courses" class="button primary">
+                        Найти своё направление <span>→</span>
+                    </a>
+                    <a href="#learning" class="button secondary">
+                        Как это работает
+                    </a>
+                </div>
+
+                <div class="hero-bottom">
+                    <div class="hero-avatars">
+                        <span>Py</span>
+                        <span>JS</span>
+                        <span>⌘</span>
+                    </div>
+                    <p>От первых строк кода<br><strong>до собственных проектов</strong></p>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>your_future.py</span>
+                        <span class="window-menu">•••</span>
+                    </div>
+
+                    <div class="code-content">
+                        <div><span class="line-number">01</span> <span class="code-purple">class</span> <span class="code-blue">Developer</span>:</div>
+                        <div><span class="line-number">02</span> <span class="indent">def <span class="code-yellow">__init__</span>(self):</span></div>
+                        <div><span class="line-number">03</span> <span class="indent-2">self.skills = []</span></div>
+                        <div><span class="line-number">04</span> <span class="indent-2">self.curiosity = <span class="code-orange">True</span></span></div>
+                        <div><span class="line-number">05</span></div>
+                        <div><span class="line-number">06</span> <span class="code-purple">def</span> <span class="code-blue">learn</span>(self, skill):</div>
+                        <div><span class="line-number">07</span> <span class="indent">self.skills.append(skill)</span></div>
+                        <div><span class="line-number">08</span></div>
+                        <div><span class="line-number">09</span> <span class="code-green"># Your story starts here.</span></div>
+                    </div>
+
+                    <div class="window-footer">
+                        <span>● Python</span>
+                        <span>UTF-8</span>
+                        <span>Ln 9, Col 1</span>
+                    </div>
+                </div>
+
+                <div class="floating-card project-card">
+                    <div class="floating-icon purple-icon">✦</div>
+                    <div>
+                        <small>ТВОЙ РЕЗУЛЬТАТ</small>
+                        <strong>Первый проект</strong>
+                    </div>
+                    <span class="floating-arrow">↗</span>
+                </div>
+
+                <div class="floating-card progress-card">
+                    <div class="progress-top">
+                        <span>Твой прогресс</span>
+                        <strong>72%</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div></div>
+                    </div>
+                    <small>Демонстрационный пример</small>
+                </div>
+
+                <div class="visual-decoration decoration-one"></div>
+                <div class="visual-decoration decoration-two"></div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span></span>
+            ЛИСТАЙ НИЖЕ
+        </div>
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+        <div class="container intro-content">
+            <div>
+                <span class="eyebrow">ТВОИ ВОЗМОЖНОСТИ</span>
+                <h2>Большие идеи<br>начинаются с малого.</h2>
+            </div>
+
+            <p>
+                Необязательно знать всё с самого начала.
+                Достаточно любопытства, желания разбираться
+                и готовности пробовать новое.
+                Остальному можно научиться.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- COURSES -->
+
+    <section class="courses section" id="courses">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">НАПРАВЛЕНИЯ ОБУЧЕНИЯ</span>
+                    <h2>Выбери свой путь<span>.</span></h2>
+                </div>
+                <p>
+                    Разные технологии — разные возможности.
+                    Найди направление, которое тебе интересно.
+                </p>
+            </div>
+
+            <div class="course-grid">
+
+                <article class="course-card">
+                    <div class="course-card-top">
+                        <div class="course-icon python-icon">Py</div>
+                        <span class="course-number">01 / 03</span>
+                    </div>
+
+                    <span class="course-level">ЯЗЫК ПРОГРАММИРОВАНИЯ</span>
+                    <h3>Python</h3>
+
+                    <p>
+                        Начни программировать на одном из самых
+                        популярных языков. Изучай основы, алгоритмы
+                        и создавай собственные приложения.
+                    </p>
+
+                    <div class="course-tags">
+                        <span>Основы</span>
+                        <span>Алгоритмы</span>
+                        <span>Проекты</span>
+                    </div>
+
+                    <a href="#contacts" class="course-link">
+                        Подробнее <span>→</span>
+                    </a>
+                </article>
+
+                <article class="course-card featured-course">
+                    <div class="course-card-top">
+                        <div class="course-icon web-icon">&lt;/&gt;</div>
+                        <span class="course-number">02 / 03</span>
+                    </div>
+
+                    <span class="course-level">ВЕБ-ТЕХНОЛОГИИ</span>
+                    <h3>Web-разработка</h3>
+
+                    <p>
+                        Узнай, как устроен интернет изнутри.
+                        Создавай интерфейсы и превращай
+                        дизайн в работающие сайты.
+                    </p>
+
+                    <div class="course-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#contacts" class="course-link">
+                        Подробнее <span>→</span>
+                    </a>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-card-top">
+                        <div class="course-icon backend-icon">⌘</div>
+                        <span class="course-number">03 / 03</span>
+                    </div>
+
+                    <span class="course-level">СЕРВЕРНАЯ РАЗРАБОТКА</span>
+                    <h3>Backend</h3>
+
+                    <p>
+                        Загляни за кулисы приложений.
+                        Работай с базами данных, API
+                        и серверной логикой.
+                    </p>
+
+                    <div class="course-tags">
+                        <span>Django</span>
+                        <span>SQL</span>
+                        <span>API</span>
+                    </div>
+
+                    <a href="#contacts" class="course-link">
+                        Подробнее <span>→</span>
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="courses-bottom">
+                <span>Не знаешь, с чего начать?</span>
+                <a href="#faq">Посмотри ответы на частые вопросы →</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LEARNING PROCESS -->
+
+    <section class="learning section" id="learning">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">ПРОСТОЙ ПУТЬ К РЕЗУЛЬТАТУ</span>
+                    <h2>Как проходит обучение<span>.</span></h2>
+                </div>
+                <p>
+                    Последовательно осваивай новые темы,
+                    выполняй задания и наблюдай за своим прогрессом.
+                </p>
+            </div>
+
+            <div class="learning-layout">
+
+                <div class="learning-steps">
+
+                    <div class="learning-step active-step">
+                        <div class="step-marker">01</div>
+                        <div>
+                            <h3>Изучай теорию</h3>
+                            <p>
+                                Разбирай новые понятия и знакомься
+                                с инструментами разработки.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="learning-step">
+                        <div class="step-marker">02</div>
+                        <div>
+                            <h3>Закрепляй знания</h3>
+                            <p>
+                                Решай практические задачи
+                                и учись применять знания.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="learning-step">
+                        <div class="step-marker">03</div>
+                        <div>
+                            <h3>Создавай проекты</h3>
+                            <p>
+                                Объединяй изученные технологии
+                                в собственные разработки.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="learning-step">
+                        <div class="step-marker">04</div>
+                        <div>
+                            <h3>Развивайся дальше</h3>
+                            <p>
+                                Переходи к новым темам,
+                                усложняй задачи и совершенствуй навыки.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lesson-preview">
+                    <div class="lesson-preview-header">
+                        <span>ПРИМЕР УЧЕБНОГО МАТЕРИАЛА</span>
+                        <span class="lesson-status">УРОК</span>
+                    </div>
+
+                    <div class="lesson-preview-body">
+                        <div class="lesson-module">PYTHON / МОДУЛЬ 01</div>
+                        <h3>Переменные<br>и типы данных</h3>
+                        <p>
+                            Познакомься с основными типами данных
+                            и научись сохранять информацию
+                            в переменных.
+                        </p>
+
+                        <div class="lesson-code">
+                            <div><span>1</span> name = <b>"Nuvio"</b></div>
+                            <div><span>2</span> age = <i>15</i></div>
+                            <div><span>3</span> print(name)</div>
+                        </div>
+
+                        <div class="lesson-bottom">
+                            <div>
+                                <strong>Теория</strong>
+                                <small>Пример урока</small>
+                            </div>
+                            <div class="lesson-progress">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lesson-preview-footer">
+                        <span>✦</span>
+                        Маленькие шаги приводят к большим результатам
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about section" id="about">
+        <div class="container about-layout">
+
+            <div class="about-heading">
+                <span class="eyebrow">ФИЛОСОФИЯ NUVIO</span>
+                <h2>Технологии —<br>это инструмент.<br><span>Возможности —<br>безграничны.</span></h2>
+
+                <p>
+                    Мы считаем, что программирование —
+                    это не просто написание кода.
+                    Это умение мыслить, находить решения
+                    и воплощать собственные идеи.
+                </p>
+            </div>
+
+            <div class="about-features">
+
+                <div class="feature-card">
+                    <div class="feature-icon">⌘</div>
+                    <h3>Мышление разработчика</h3>
+                    <p>
+                        Учись анализировать задачи,
+                        находить закономерности и самостоятельно
+                        искать решения.
+                    </p>
+                    <span>01</span>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">✳</div>
+                    <h3>Практический подход</h3>
+                    <p>
+                        Не ограничивайся теорией.
+                        Применяй знания на практике
+                        и создавай собственные проекты.
+                    </p>
+                    <span>02</span>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">↗</div>
+                    <h3>Постоянное развитие</h3>
+                    <p>
+                        Продолжай изучать новое,
+                        расширяй свои возможности
+                        и двигайся вперёд.
+                    </p>
+                    <span>03</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq section" id="faq">
+        <div class="container faq-layout">
+
+            <div class="faq-heading">
+                <span class="eyebrow">FAQ</span>
+                <h2>Остались вопросы<span>?</span></h2>
+                <p>
+                    Собрали ответы на вопросы,
+                    которые могут возникнуть перед началом обучения.
+                </p>
+            </div>
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary>Нужны ли знания программирования?</summary>
+                    <p>
+                        Нет. Начать можно с нуля.
+                        Материалы постепенно знакомят с основами
+                        и помогают двигаться дальше.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Как выбрать направление?</summary>
+                    <p>
+                        Подумай, что тебе интереснее:
+                        создавать сайты, разрабатывать приложения
+                        или изучать серверную часть программ.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Будет ли практика?</summary>
+                    <p>
+                        Да. Практические задания помогают закреплять
+                        материал и применять полученные знания.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Можно ли учиться в собственном темпе?</summary>
+                    <p>
+                        Формат и расписание обучения зависят
+                        от конкретной программы и группы.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta" id="contacts">
+        <div class="container cta-content">
+
+            <div class="cta-decoration">N.</div>
+
+            <span class="eyebrow">ТВОЯ ИСТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ</span>
+            <h2>Идеи ждут,<br>когда ты их создашь.</h2>
+            <p>
+                Выбери направление и сделай первый шаг
+                в мир программирования.
+            </p>
+
+            <a href="#courses" class="button light">
+                Найти своё направление <span>→</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <a href="#" class="logo">nuvio<span>.</span></a>
+            <p>Учись. Создавай. Развивайся.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#courses">Направления</a>
+            <a href="#learning">Обучение</a>
+            <a href="#about">О школе</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <span class="copyright">© 2026 Nuvio</span>
+    </div>
+</footer>
+
+</body>
+</html>
